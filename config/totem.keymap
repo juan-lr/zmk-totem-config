@@ -16,7 +16,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COLEMAK  0
-#define QWERTY   1 
+#define QWERTY   1
 #define NAV      2
 #define SYM      3
 #define ADJ      4
@@ -38,8 +38,8 @@
             bindings = <&kp ESC>;
         };
 
-        tog_clmkdh {
-            bindings = <&tog 0>;
+        tog_qwerty {
+            bindings = <&tog 1>;
             key-positions = <8 9>;
         };
     };
