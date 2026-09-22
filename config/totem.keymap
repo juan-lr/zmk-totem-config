@@ -21,10 +21,10 @@
 #define ADJ  3
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <250>;
 };
 
 / {
@@ -95,7 +95,7 @@
                   &kp Q  &kp W       &kp F         &kp P        &kp B          &kp J      &kp L        &kp U        &kp Y       &kp SEMI
                   &kp A  &mt LALT R  &mt LCTRL S   &mt LSHFT T  &kp G          &kp M      &mt RSHFT N  &mt RCTRL E  &mt RALT I  &kp O
 &kp LEFT_CONTROL  &kp Z  &kp X       &kp C         &kp D        &kp V          &kp K      &kp H        &kp COMMA    &kp DOT     &kp SLASH  &kp APOS
-                                     &kp LEFT_GUI  &kp TAB      &lt 2 SPACE    &lt 3 RET  &kp BSPC     &kp RALT
+                                     &kp LEFT_GUI  &kp TAB      &lt 2 SPACE    &lt 3 RET  &kp BSPC     &kp DELETE
             >;
         };
 
@@ -116,10 +116,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-            &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&caps_word  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
-                                   &trans    &trans     &trans      &mo 4     &kp KP_N0     &trans
+            &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC                &kp RBRC               &kp N7        &kp N8        &kp N9        &kp KP_PLUS
+            &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&caps_word  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
+                                   &trans    &trans     &trans                  &mo 4                  &kp NUMBER_0  &trans
             >;
         };
 
